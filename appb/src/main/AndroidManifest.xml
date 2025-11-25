@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <queries>
+        <package android:name="cam.manoash.twoipcapps.appa" />
+    </queries>
+
+    <application
+        android:label="App B"
+        android:theme="@style/Theme.TwoIpcApps">
+        <activity android:name=".MainActivityB" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <service android:name=".EventServiceB" android:exported="true">
+            <intent-filter>
+                <action android:name="cam.manoash.twoipcapps.appb.ipc.EventService" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>
