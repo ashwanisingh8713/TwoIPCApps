@@ -21,4 +21,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "TwoIpcApps"
 // Add two separate app modules
-include(":appa", ":appb")
+include(":ipc_appA", ":ipc_appB")
