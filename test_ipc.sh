@@ -8,8 +8,8 @@ adb uninstall cam.manoash.twoipcapps.appa 2>/dev/null
 adb uninstall cam.manoash.twoipcapps.appb 2>/dev/null
 
 echo "Step 2: Installing fresh APKs..."
-adb install appa/build/outputs/apk/debug/appa-debug.apk
-adb install appb/build/outputs/apk/debug/appb-debug.apk
+adb install -r appa/build/outputs/apk/debug/appa-debug.apk
+adb install -r appb/build/outputs/apk/debug/appb-debug.apk
 
 echo ""
 echo "Step 3: Clearing logcat..."
