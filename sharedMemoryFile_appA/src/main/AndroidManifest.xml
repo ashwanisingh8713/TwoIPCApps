@@ -6,7 +6,7 @@
     </queries>
 
     <application
-        android:label="Shared Memory App A"
+        android:label="Shared MemoryFile App A"
         android:theme="@style/Theme.TwoIpcApps">
         <activity
             android:name=".MainActivityA"
